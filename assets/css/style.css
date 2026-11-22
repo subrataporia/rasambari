@@ -49,6 +49,8 @@ body {
     color: var(--text-primary);
     margin: 0;
     padding: 0;
+    background: url("../images/bg.jpeg") repeat;
+    background-attachment: fixed;
 }
 
 
@@ -164,4 +166,105 @@ body {
 .slick-prev::before,
 .slick-next::before {
     display: none;
+}
+
+.best-seller-arrow {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #eadfe6;
+    border-radius: 9999px;
+    color: var(--primary);
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.best-seller-arrow:hover {
+    color: #fff;
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.best-seller-slider .slick-track,
+.new-arrival-slider .slick-track,
+.testimonial-slider .slick-track {
+    display: flex;
+}
+
+.best-seller-slider .slick-slide,
+.new-arrival-slider .slick-slide,
+.testimonial-slider .slick-slide {
+    height: auto;
+}
+
+.best-seller-slider .slick-slide > article,
+.new-arrival-slider .slick-slide > article,
+.testimonial-slider .slick-slide > article {
+    height: 100%;
+}
+
+.category-section {
+    position: relative;
+    isolation: isolate;
+}
+
+.category-section::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("../images/category_bg.webp") center / cover no-repeat;
+    content: "";
+    filter: blur(3px);
+    opacity: 0.24;
+    pointer-events: none;
+    /* transform: scale(1.02); */
+}
+
+.company-profile-section {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round' opacity='.05'%3E%3Cpath d='M28 157C54 127 61 91 47 37M48 99C31 96 23 85 23 72c16 2 25 11 25 27Zm2-21C47 61 54 49 67 43c2 15-4 27-17 35Zm-8 48c-15-2-24-11-27-24 16 1 25 9 27 24Zm13-24c-1-15 7-26 20-30 1 15-6 26-20 30Z'/%3E%3Cpath d='M131 157c-3-31 8-57 29-78m-18 40c-13-7-17-19-14-31 13 7 18 18 14 31Zm12-22c1-14 10-23 23-25 0 14-8 23-23 25Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 180px 180px;
+}
+
+.testimonial-card {
+    min-height: 100%;
+    border: 1px solid rgba(241, 214, 229, 0.9);
+    background: linear-gradient(145deg, #ffffff 0%, #fff8f4 100%);
+    box-shadow: 0 5px 20px rgba(61, 23, 69, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.testimonial-card::before {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 4px;
+    background: var(--gradient-primary);
+    content: "";
+}
+
+.testimonial-card::after {
+    position: absolute;
+    top: 54px;
+    right: 22px;
+    z-index: 0;
+    color: rgba(220, 33, 118, 0.07);
+    content: "\201C";
+    font-family: Georgia, serif;
+    font-size: 140px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.testimonial-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(220, 33, 118, 0.45);
+    box-shadow: 0 8px 20px rgba(61, 23, 69, 0.2);
 }

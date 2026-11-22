@@ -16,7 +16,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { primary: '#DC2176', secondary: '#F38A05', tertiary: '#F6FAFC' }, 
+                    colors: { primary: '#862d32', secondary: '#F38A05', tertiary: '#F6FAFC' }, 
                     fontFamily: {
                         heading: ['"Elsie Swash Caps"', 'serif'],
                     },                   
@@ -50,13 +50,13 @@
     </section>
 
     <!-- Header -->
-    <header class="sticky top-0 z-40 transition-all lg:py-2.5 py-2 backdrop-blur-sm">
+    <header class="sticky top-0 z-40 transition-all lg:py-2.5 py-2 bg-white backdrop-blur-sm shadow">
         <div class="max-w-7xl mx-auto px-3 lg:px-6 flex items-center justify-between">
             <a href="#" class="group inline-flex items-center gap-3 md:gap-3.5 select-none py-0.5 transition-all shrink-0 mr-4">
                 <img src="assets/images/logo.webp" alt="RASAMBARI, UNIQUE AS YOU" class="w-24">
             </a>
             
-            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-regular tracking-wide">
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-black font-regular tracking-wide font-medium">
                 <a href="#" class="inline-flex items-center hover:border-b hover:border-primary hover:text-primary">
                     Home
                 </a>
@@ -70,7 +70,7 @@
                     Best Sellers
                 </a>
                 <a href="#" class="inline-flex items-center hover:border-b hover:border-primary hover:text-primary">
-                    About Us
+                    Blog
                 </a>
                 <a href="#" class="inline-flex items-center hover:border-b hover:border-primary hover:text-primary">
                     Contact Us
@@ -78,16 +78,16 @@
             </nav>
 
             
-            <div class="flex items-center gap-3 lg:gap-6">
-                <button type="button" class="openSearchModalBtn relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-300 text-xl text-black hover:text-primary transition cursor-pointer" aria-label="Search site">
+            <div class="flex items-center gap-3 lg:gap-4">
+                <button type="button" class="openSearchModalBtn relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-300 text-xl text-black hover:text-primary hover:border-primary transition cursor-pointer" aria-label="Search site">
                     <i class="ti ti-search"></i>
                 </button>
-                <a href="#" class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-300 text-xl text-black hover:text-primary" aria-label="Shopping cart, 0 items">
-                    <i class="ti ti-shopping-cart"></i>
-                    <span aria-hidden="true" class="absolute -right-2 -top-2 inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-secondary px-1 text-xs font-medium leading-none text-white">0</span>
+                <a href="#" class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-300 text-xl text-black hover:text-primary hover:border-primary transition cursor-pointer">
+                    <i class="ti ti-user"></i>
                 </a>
-                <a href="#" class="rounded bg-secondary px-5 py-2 text-sm tracking-[0.12em] text-white font-medium hover:bg-primary">
-                    Login
+                <a href="#" class="relative inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gray-300 text-xl text-black hover:text-primary hover:border-primary" aria-label="Shopping cart, 0 items">
+                    <i class="ti ti-shopping-cart"></i>
+                    <span aria-hidden="true" class="absolute -right-2 -top-2 inline-flex h-6 min-w-6 items-center justify-center rounded-full bg-primary px-1 text-xs font-medium leading-none text-white">0</span>
                 </a>
                 
                 
@@ -130,6 +130,653 @@
         </div>
     </section>
 
+    <!-- Service Highlights -->
+    <section class="bg-[linear-gradient(90deg,#6b1d20,#862d32,#6f2228)] text-white">
+        <div class="w-full mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 py-6 lg:py-8">
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/truck.svg" alt="Free Delivery" class="h-10">
+                    <div>
+                        <h3 class="text-base lg:text-2xl font-heading leading-tight">Free Delivery</h3>
+                        <p class="mt-1 text-base leading-snug">No-cost shipping worldwide</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/grantee.svg" alt="Satisfaction Guarantee" class="h-10">
+                    <div>
+                        <h3 class="text-base lg:text-2xl font-heading leading-tight">Satisfaction Guarantee</h3>
+                        <p class="mt-1 text-base leading-snug">Guaranteed money-back policy</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/headphone.svg" alt="Headset" class="h-10">
+                    <div>
+                        <h3 class="text-base lg:text-2xl font-heading leading-tight">Internet Assistance</h3>
+                        <p class="mt-1 text-base leading-snug">24/7 online customer support</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <img src="assets/images/card.svg" alt="Card" class="h-10">
+                    <div>
+                        <h3 class="text-base lg:text-2xl font-heading leading-tight">Adaptable Payments</h3>
+                        <p class="mt-1 text-base leading-snug">Payment options are flexible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section id="best-sellers" class="py-14 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-end justify-between gap-4 mb-8">
+                <div>
+                    <p class="text-primary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Our Favorites</p>
+                    <h2 class="font-heading text-3xl lg:text-5xl font-bold text-[#973a18]">Best Sellers</h2>
+                </div>
+                <div class="best-seller-arrows flex items-center gap-3"></div>
+            </div>
+
+            <div class="best-seller-slider -mx-3">
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">20% OFF</span>
+                            <img src="assets/images/products/Golden turmeric face pack in ceramic bowl.webp" alt="Golden Turmeric Face Pack" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Face Care</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Golden Turmeric Face Pack</h3>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-primary">&#8377;375</span>
+                                    <span class="text-sm text-gray-400 line-through">&#8377;469</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Golden Turmeric Face Pack to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">15% OFF</span>
+                            <img src="assets/images/products/Lavender Blackberry Shower Gel.webp" alt="Lavender Blackberry Shower Gel" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Shower Care</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Lavender Blackberry Shower Gel</h3>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-primary">&#8377;485</span>
+                                    <span class="text-sm text-gray-400 line-through">&#8377;571</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Lavender Blackberry Shower Gel to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">25% OFF</span>
+                            <img src="assets/images/products/Green Apple & Tangerine Shower Gel.webp" alt="Green Apple and Tangerine Shower Gel" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Shower Care</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Green Apple &amp; Tangerine Shower Gel</h3>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-primary">&#8377;510</span>
+                                    <span class="text-sm text-gray-400 line-through">&#8377;680</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Green Apple and Tangerine Shower Gel to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">18% OFF</span>
+                            <img src="assets/images/products/Charcoal exfoliating soap.webp" alt="Charcoal Exfoliating Soap" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Bath &amp; Body</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Charcoal Exfoliating Soap</h3>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-primary">&#8377;295</span>
+                                    <span class="text-sm text-gray-400 line-through">&#8377;360</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Charcoal Exfoliating Soap to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">22% OFF</span>
+                            <img src="assets/images/products/Buttery foot cream.webp" alt="Buttery Foot Cream" class="h-full w-full object-cover object-center transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Foot Care</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Buttery Foot Cream</h3>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="text-xl font-bold text-primary">&#8377;440</span>
+                                    <span class="text-sm text-gray-400 line-through">&#8377;564</span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Buttery Foot Cream to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop By Category -->
+    <section id="shop-categories" class="category-section py-14 lg:py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-end justify-between gap-4 mb-8">
+                <div>
+                    <p class="text-primary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Explore Our Range</p>
+                    <h2 class="font-heading text-3xl lg:text-5xl font-bold text-white">Shop by Category</h2>
+                </div>
+                <div class="category-arrows flex items-center gap-3"></div>
+            </div>
+
+            <div class="category-slider -mx-3">
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/soap.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Soap</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/cream.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Cream</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/face-wash.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Face Wash</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/gel.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Shower Gel</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/oil.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Oil</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/powder.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Powder</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/scrub.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Scrub</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/serum.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Serum</span>
+                    </a>
+                </div>
+                <div class="px-3">
+                    <a href="#" class="category-card group flex flex-col items-center gap-4 py-4 text-center">
+                        <span class="category-icon-circle flex h-28 w-28 items-center justify-center rounded-full bg-[#6b1d20] transition duration-300 group-hover:scale-110 group-hover:bg-secondary group-hover:shadow-lg">
+                            <img src="assets/images/category/shampoo.svg" alt="" class="h-14 w-14">
+                        </span>
+                        <span class="text-base lg:text-lg font-semibold text-white transition-colors group-hover:text-secondary">Shampoo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrival -->
+    <section id="new-arrivals" class="py-14 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-end justify-between gap-4 mb-8">
+                <div>
+                    <p class="text-primary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Freshly Added</p>
+                    <h2 class="font-heading text-3xl lg:text-5xl font-bold text-[#973a18]">New Arrivals</h2>
+                </div>
+                <div class="new-arrival-arrows flex items-center gap-3"></div>
+            </div>
+
+            <div class="new-arrival-slider -mx-3">
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">NEW</span>
+                            <img src="assets/images/products/Turmeric-speckled orange soap bar.webp" alt="Turmeric Speckled Orange Soap Bar" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Bath &amp; Body</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Turmeric Speckled Orange Soap Bar</h3>
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-xl font-bold text-primary">&#8377;320</span>
+                                <span class="text-sm text-gray-400 line-through">&#8377;400</span>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Turmeric Speckled Orange Soap Bar to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">NEW</span>
+                            <img src="assets/images/products/Stacked green skin detox bar.webp" alt="Green Skin Detox Bar" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Bath &amp; Body</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Green Skin Detox Bar</h3>
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-xl font-bold text-primary">&#8377;350</span>
+                                <span class="text-sm text-gray-400 line-through">&#8377;420</span>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Green Skin Detox Bar to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">NEW</span>
+                            <img src="assets/images/products/Premium tri-color face and body scrub.webp" alt="Tri-Color Face and Body Scrub" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Skin Care</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Tri-Color Face &amp; Body Scrub</h3>
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-xl font-bold text-primary">&#8377;520</span>
+                                <span class="text-sm text-gray-400 line-through">&#8377;650</span>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Tri-Color Face and Body Scrub to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">NEW</span>
+                            <img src="assets/images/products/Pastel whipped butter soap.webp" alt="Pastel Whipped Butter Soap" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Bath &amp; Body</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Pastel Whipped Butter Soap</h3>
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-xl font-bold text-primary">&#8377;390</span>
+                                <span class="text-sm text-gray-400 line-through">&#8377;480</span>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Pastel Whipped Butter Soap to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="px-3">
+                    <div class="group h-full border border-[#eadfe6] rounded-2xl overflow-hidden bg-white transition duration-300 hover:border-primary">
+                        <div class="relative aspect-square overflow-hidden bg-[#fbf7ef]">
+                            <span class="absolute z-10 left-4 top-4 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">NEW</span>
+                            <img src="assets/images/products/Paradise layered soap.webp" alt="Paradise Layered Soap" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <p class="text-sm text-[#765B75] mb-1">Bath &amp; Body</p>
+                            <h3 class="min-h-[3.5rem] text-lg font-semibold text-[#3D1745] mb-3">Paradise Layered Soap</h3>
+                            <div class="flex items-baseline gap-2 mb-4">
+                                <span class="text-xl font-bold text-primary">&#8377;340</span>
+                                <span class="text-sm text-gray-400 line-through">&#8377;425</span>
+                            </div>
+                            <div class="grid grid-cols-[1fr_48px] gap-3">
+                                <a href="#" class="h-12 rounded-lg bg-primary text-white flex items-center justify-center font-semibold hover:bg-[#973a18] transition">View Details</a>
+                                <button type="button" class="h-12 w-12 rounded-lg border border-primary text-primary flex items-center justify-center text-xl hover:bg-primary hover:text-white transition" aria-label="Add Paradise Layered Soap to cart">
+                                    <i class="ti ti-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Profile -->
+    <section id="company-profile" class="company-profile-section py-14 lg:py-20 bg-[#2c0f32]" aria-labelledby="company-profile-title">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div class="relative">
+                <img src="assets/images/category_bg.webp" alt="Natural herbs and ingredients used in handmade products" class="w-full aspect-[4/3] object-cover rounded-3xl">
+                <div class="absolute -bottom-4 right-4 lg:-right-5 rounded-2xl bg-white px-5 py-4 shadow-lg">
+                    <p class="font-heading text-lg font-bold text-[#973a18]">Handmade with care</p>
+                    <p class="text-sm text-[#765B75]">Inspired by nature</p>
+                </div>
+            </div>
+
+            <div class="pt-4 lg:pt-0">
+                <p class="text-secondary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Our Story</p>
+                <h2 id="company-profile-title" class="font-heading text-3xl lg:text-5xl font-bold text-white mb-6">Company Profile</h2>
+                <div class="space-y-5 text-base lg:text-lg leading-relaxed text-white/90">
+                    <p>Rasambari is the confluence of creative brilliance and aesthetic quotient in the form of handmade organic products to enhance your skin's health and overall wellness, enabling you to shine in your own unique way.</p>
+                    <p>We manufacture handmade organic, vegan and natural soaps, bath salts, shampoos, hair oils, lotions, moisturizers, body oils, creams, body butter, butter soaps, lip balms and jewellery.</p>
+                    <p>Each and every product is handmade and curated to assure the wellness of our consumers.</p>
+                    <p class="border-l-4 border-secondary pl-5 text-white/75">All ingredients used to make our products are natural, organic, chemical-free, vegan and cruelty-free, alcohol-free, SLS-free, SLES-free and paraben-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="customer-reviews" class="py-14 lg:py-20 bg-[#fffaf7]" aria-labelledby="testimonials-title">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-end justify-between gap-4 mb-8">
+                <div class="max-w-2xl">
+                    <p class="text-primary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Customer Feedback</p>
+                    <h2 id="testimonials-title" class="font-heading text-3xl lg:text-5xl font-bold text-[#3D1745]">Loved for the little things</h2>
+                    <p class="mt-4 text-[#765B75] text-base lg:text-lg">A few words about the handmade care and everyday feel of our products.</p>
+                </div>
+                <div class="testimonial-arrows flex items-center gap-3 shrink-0"></div>
+            </div>
+
+            <div class="testimonial-slider -mx-3">
+                <article class="p-5 h-full">
+                    <div class="testimonial-card relative flex h-full flex-col overflow-hidden rounded-[2rem] p-6 lg:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FCE8F1] text-primary text-2xl">
+                            <i class="ti ti-quote" aria-hidden="true"></i>
+                        </span>
+                        <div class="flex gap-1 text-secondary" aria-label="5 out of 5 stars">
+                            <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#3D1745] text-lg leading-relaxed">“The handmade soap feels gentle and leaves my skin feeling fresh. I also love the thoughtful, natural ingredients.”</p>
+                    <div class="mt-auto border-t border-[#f1d6e5] pt-5">
+                        <p class="font-semibold text-[#3D1745]">Ananya Sen</p>
+                        <p class="mt-1 text-sm text-[#765B75]">Kolkata, West Bengal</p>
+                        <p class="mt-1 text-xs text-[#765B75]">Handmade Soap</p>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="p-5 h-full">
+                    <div class="testimonial-card relative flex h-full flex-col overflow-hidden rounded-[2rem] p-6 lg:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FCE8F1] text-primary text-2xl">
+                            <i class="ti ti-quote" aria-hidden="true"></i>
+                        </span>
+                        <div class="flex gap-1 text-secondary" aria-label="5 out of 5 stars">
+                            <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#3D1745] text-lg leading-relaxed">“The turmeric face pack is easy to use and feels lovely as part of my self-care routine. The handmade touch makes it special.”</p>
+                    <div class="mt-auto border-t border-[#f1d6e5] pt-5">
+                        <p class="font-semibold text-[#3D1745]">Riya Das</p>
+                        <p class="mt-1 text-sm text-[#765B75]">Guwahati, Assam</p>
+                        <p class="mt-1 text-xs text-[#765B75]">Turmeric Face Pack</p>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="p-5 h-full">
+                    <div class="testimonial-card relative flex h-full flex-col overflow-hidden rounded-[2rem] p-6 lg:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FCE8F1] text-primary text-2xl">
+                            <i class="ti ti-quote" aria-hidden="true"></i>
+                        </span>
+                        <div class="flex gap-1 text-secondary" aria-label="5 out of 5 stars">
+                            <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#3D1745] text-lg leading-relaxed">“The shower gel has a lovely fragrance and feels refreshing. It has quickly become a favorite in my daily routine.”</p>
+                    <div class="mt-auto border-t border-[#f1d6e5] pt-5">
+                        <p class="font-semibold text-[#3D1745]">Priyanka Roy</p>
+                        <p class="mt-1 text-sm text-[#765B75]">Siliguri, West Bengal</p>
+                        <p class="mt-1 text-xs text-[#765B75]">Shower Gel</p>
+                    </div>
+                    </div>
+                </article>
+
+                <article class="p-5 h-full">
+                    <div class="testimonial-card relative flex h-full flex-col overflow-hidden rounded-[2rem] p-6 lg:p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FCE8F1] text-primary text-2xl">
+                                <i class="ti ti-quote" aria-hidden="true"></i>
+                            </span>
+                            <div class="flex gap-1 text-secondary" aria-label="5 out of 5 stars">
+                                <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+                            </div>
+                        </div>
+                        <p class="text-[#3D1745] text-lg leading-relaxed">“The foot cream has a rich texture and feels comforting after a long day. A lovely addition to my self-care routine.”</p>
+                        <div class="mt-auto border-t border-[#f1d6e5] pt-5">
+                            <p class="font-semibold text-[#3D1745]">Moumita Paul</p>
+                            <p class="mt-1 text-sm text-[#765B75]">Agartala, Tripura</p>
+                            <p class="mt-1 text-xs text-[#765B75]">Buttery Foot Cream</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-5 h-full">
+                    <div class="testimonial-card relative flex h-full flex-col overflow-hidden rounded-[2rem] p-6 lg:p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FCE8F1] text-primary text-2xl">
+                                <i class="ti ti-quote" aria-hidden="true"></i>
+                            </span>
+                            <div class="flex gap-1 text-secondary" aria-label="5 out of 5 stars">
+                                <i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i><i class="ti ti-star-filled"></i>
+                            </div>
+                        </div>
+                        <p class="text-[#3D1745] text-lg leading-relaxed">“I enjoy the fresh, handmade feel of this scrub. It makes my bath routine feel a little more special.”</p>
+                        <div class="mt-auto border-t border-[#f1d6e5] pt-5">
+                            <p class="font-semibold text-[#3D1745]">Sohini Mukherjee</p>
+                            <p class="mt-1 text-sm text-[#765B75]">Howrah, West Bengal</p>
+                            <p class="mt-1 text-xs text-[#765B75]">Face &amp; Body Scrub</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-14 lg:py-20" aria-labelledby="faq-title">
+        <div class="max-w-4xl mx-auto px-4 lg:px-8">
+            <div class="text-center mb-8 lg:mb-12">
+                <p class="text-primary font-semibold uppercase tracking-[0.2em] text-sm mb-2">Need to Know</p>
+                <h2 id="faq-title" class="font-heading text-3xl lg:text-5xl font-bold text-[#3D1745]">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <article class="faq-item rounded-2xl border border-[#f1d6e5] bg-white px-5 lg:px-7">
+                    <h3>
+                        <button id="faq-question-1" type="button" class="flex w-full items-center justify-between gap-5 py-5 text-left text-base lg:text-lg font-semibold text-[#3D1745]" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)">
+                            What makes Rasambari products special?
+                            <i class="faq-icon ti ti-plus shrink-0 text-xl text-primary transition-transform duration-300" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-1" class="faq-content max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-500 ease-in-out" role="region" aria-labelledby="faq-question-1" aria-hidden="true">
+                        <p class="pb-5 text-sm lg:text-base leading-relaxed text-[#765B75]">Our products are handmade and curated with care, using natural, organic and vegan ingredients.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-2xl border border-[#f1d6e5] bg-white px-5 lg:px-7">
+                    <h3>
+                        <button id="faq-question-2" type="button" class="flex w-full items-center justify-between gap-5 py-5 text-left text-base lg:text-lg font-semibold text-[#3D1745]" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)">
+                            Are your products vegan and cruelty-free?
+                            <i class="faq-icon ti ti-plus shrink-0 text-xl text-primary transition-transform duration-300" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-2" class="faq-content max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-500 ease-in-out" role="region" aria-labelledby="faq-question-2" aria-hidden="true">
+                        <p class="pb-5 text-sm lg:text-base leading-relaxed text-[#765B75]">Yes. Rasambari products are vegan and cruelty-free. Our products are also made without alcohol, SLS, SLES and parabens.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-2xl border border-[#f1d6e5] bg-white px-5 lg:px-7">
+                    <h3>
+                        <button id="faq-question-3" type="button" class="flex w-full items-center justify-between gap-5 py-5 text-left text-base lg:text-lg font-semibold text-[#3D1745]" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)">
+                            What kinds of products do you make?
+                            <i class="faq-icon ti ti-plus shrink-0 text-xl text-primary transition-transform duration-300" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-3" class="faq-content max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-500 ease-in-out" role="region" aria-labelledby="faq-question-3" aria-hidden="true">
+                        <p class="pb-5 text-sm lg:text-base leading-relaxed text-[#765B75]">Our range includes soaps, bath salts, shampoos, hair oils, lotions, moisturizers, body oils, creams, body butter and lip balms.</p>
+                    </div>
+                </article>
+
+                <article class="faq-item rounded-2xl border border-[#f1d6e5] bg-white px-5 lg:px-7">
+                    <h3>
+                        <button id="faq-question-4" type="button" class="flex w-full items-center justify-between gap-5 py-5 text-left text-base lg:text-lg font-semibold text-[#3D1745]" aria-expanded="false" aria-controls="faq-answer-4" onclick="toggleFaq(this)">
+                            How should I use a product?
+                            <i class="faq-icon ti ti-plus shrink-0 text-xl text-primary transition-transform duration-300" aria-hidden="true"></i>
+                        </button>
+                    </h3>
+                    <div id="faq-answer-4" class="faq-content max-h-0 overflow-hidden opacity-0 transition-[max-height,opacity] duration-500 ease-in-out" role="region" aria-labelledby="faq-question-4" aria-hidden="true">
+                        <p class="pb-5 text-sm lg:text-base leading-relaxed text-[#765B75]">Please follow the usage directions on the individual product packaging. If you have a known sensitivity, check the ingredient list before use.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2c0f32] text-white">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 pt-14 pb-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+                <div>
+                    <a href="#" class="inline-flex mb-5">
+                        <img src="assets/images/logo.webp" alt="Rasambari" class="w-28 rounded bg-white p-2">
+                    </a>
+                    <p class="max-w-xs text-sm leading-relaxed text-white/75">Handmade organic care for your skin and everyday wellness. Shine in your own unique way.</p>
+                    <div class="mt-5 flex items-center gap-4 text-xl">
+                        <a href="#" aria-label="Facebook" class="text-white/75 transition hover:text-secondary"><i class="ti ti-brand-facebook"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-white/75 transition hover:text-secondary"><i class="ti ti-brand-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="text-white/75 transition hover:text-secondary"><i class="ti ti-brand-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="mb-5 text-lg font-semibold">Quick Links</h2>
+                    <ul class="space-y-3 text-sm text-white/75">
+                        <li><a href="#shop-categories" class="transition hover:text-secondary">Shop by Category</a></li>
+                        <li><a href="#best-sellers" class="transition hover:text-secondary">Best Sellers</a></li>
+                        <li><a href="#new-arrivals" class="transition hover:text-secondary">New Arrivals</a></li>
+                        <li><a href="#company-profile" class="transition hover:text-secondary">About Rasambari</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-5 text-lg font-semibold">Policies &amp; Information</h2>
+                    <ul class="space-y-3 text-sm text-white/75">
+                        <li><a href="#" class="transition hover:text-secondary">Shipping &amp; Delivery</a></li>
+                        <li><a href="#" class="transition hover:text-secondary">Returns &amp; Refunds</a></li>
+                        <li><a href="#" class="transition hover:text-secondary">Privacy Policy</a></li>
+                        <li><a href="#" class="transition hover:text-secondary">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-5 text-lg font-semibold">Support</h2>
+                    <ul class="space-y-3 text-sm text-white/75">
+                        <li><a href="#faq-title" class="transition hover:text-secondary">Frequently Asked Questions</a></li>
+                        <li><a href="#customer-reviews" class="transition hover:text-secondary">Customer Reviews</a></li>
+                        <li class="pt-2 flex items-start gap-3">
+                            <i class="ti ti-headset text-xl text-secondary"></i>
+                            <span>Need help choosing a product? Visit our FAQs for guidance.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-white/15 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left text-xs text-white/60">
+                <p>&copy; Rasambari. All rights reserved.</p>
+                <p>Handmade with care, inspired by nature.</p>
+            </div>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
@@ -160,6 +807,130 @@
             speed: 700,
             pauseOnHover: false,
             cssEase: 'cubic-bezier(0.22,1,0.36,1)'
+        });
+
+        // Best Seller Slider
+        $('.best-seller-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: '.best-seller-arrows',
+            prevArrow: '<button type="button" class="best-seller-arrow" aria-label="Previous products"><i class="ti ti-arrow-left"></i></button>',
+            nextArrow: '<button type="button" class="best-seller-arrow" aria-label="Next products"><i class="ti ti-arrow-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        // New Arrival Slider
+        $('.new-arrival-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: '.new-arrival-arrows',
+            prevArrow: '<button type="button" class="best-seller-arrow" aria-label="Previous new arrivals"><i class="ti ti-arrow-left"></i></button>',
+            nextArrow: '<button type="button" class="best-seller-arrow" aria-label="Next new arrivals"><i class="ti ti-arrow-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        // Testimonials Slider
+        $('.testimonial-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            appendArrows: '.testimonial-arrows',
+            prevArrow: '<button type="button" class="best-seller-arrow" aria-label="Previous reviews"><i class="ti ti-arrow-left"></i></button>',
+            nextArrow: '<button type="button" class="best-seller-arrow" aria-label="Next reviews"><i class="ti ti-arrow-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        // Category Slider
+        $('.category-slider').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: false,
+            arrows: true,
+            appendArrows: '.category-arrows',
+            prevArrow: '<button type="button" class="best-seller-arrow" aria-label="Previous categories"><i class="ti ti-arrow-left"></i></button>',
+            nextArrow: '<button type="button" class="best-seller-arrow" aria-label="Next categories"><i class="ti ti-arrow-right"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
         });
 
         // Departments Slider
@@ -206,8 +977,10 @@
                     content.style.maxHeight = '0px';
                     content.classList.remove('opacity-100');
                     content.classList.add('opacity-0');
+                    content.setAttribute('aria-hidden', 'true');
 
                     icon.classList.remove('rotate-45');
+                    item.querySelector('button').setAttribute('aria-expanded', 'false');
                 }
             });
 
@@ -222,8 +995,10 @@
 
                 currentContent.classList.remove('opacity-100');
                 currentContent.classList.add('opacity-0');
+                currentContent.setAttribute('aria-hidden', 'true');
 
                 currentIcon.classList.remove('rotate-45');
+                button.setAttribute('aria-expanded', 'false');
 
             } else {
 
@@ -232,8 +1007,10 @@
 
                 currentContent.classList.remove('opacity-0');
                 currentContent.classList.add('opacity-100');
+                currentContent.setAttribute('aria-hidden', 'false');
 
                 currentIcon.classList.add('rotate-45');
+                button.setAttribute('aria-expanded', 'true');
             }
         }
     </script>
